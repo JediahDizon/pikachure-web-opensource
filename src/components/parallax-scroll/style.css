@@ -1,0 +1,7 @@
+.root-parallax {
+	position: fixed;
+	background-color: aliceblue;
+	width: 100%;
+	opacity: 0.3;
+	z-index: -1;
+}

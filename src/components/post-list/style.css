@@ -1,0 +1,17 @@
+.postlist-post-container {
+	display: block;
+	position: relative;
+	padding: 0;
+}
+
+.postlist-post:hover {
+	cursor: pointer;
+	filter: brightness(1.1);
+}
+
+.post-placeholder-grid {
+	height: 33vw;
+	max-height: 192px;
+	background-color: #00000010;
+	border: 1px dashed #00000010;
+}

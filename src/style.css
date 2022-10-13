@@ -1,0 +1,321 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+	
+	/* background: linear-gradient(#ff5e62, #ff9966) fixed; */
+	background-color: #00000010;
+	/* color: white; */
+	/*max-width: 574px; Login has banner that spans beyond 574px */ 
+	margin: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+	/* overflow: auto; */
+	padding-bottom: 20vh;
+}
+
+/* AntD Overrides */
+.ant-card {
+	border-radius: 20px;
+}
+
+.ant-btn {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 5px 10px 25px #00000015;
+	transition: transform .1s ease-out;
+}
+.ant-btn:hover {
+	transform: scale(1.05);
+}
+
+.ant-card-body {
+	padding: 0;
+}
+.ant-card {
+	overflow: hidden;
+}
+
+.ant-modal {
+	width: 100% !important;
+	max-width: 574px;
+}
+.ant-modal-confirm .ant-modal-body {
+	padding: 20px !important;
+}
+.ant-modal-footer {
+	border-top: none;
+	padding: 20px;
+}
+.ant-modal-close-x {
+	display: none;
+}
+
+.ant-input, .ant-input-affix-wrapper {
+	border: none;
+	border-radius: 20px;
+	/* white-space: pre; */
+	/* box-shadow: 5px 10px 25px #00000010; */
+}
+.ant-input:focus, .ant-input-focused, .ant-input-group:focus {
+	box-shadow: 5px 10px 25px #00000010;
+}
+.ant-input-group-wrapper {
+	border-radius: 20px;
+	overflow: hidden;
+	transition: box-shadow .33s ease-in-out;
+}
+.ant-input-group-wrapper:focus-within,
+.ant-input-affix-wrapper-focused {
+	box-shadow: 5px 10px 25px #00000010;
+}
+
+.ant-input-group-addon, .ant-input-group-addon:first-child {
+	border: none;
+}
+
+.ant-upload.ant-upload-select-picture-card {
+	width: 100%;
+	height: 150px;
+	margin-right: 0;
+	margin-bottom: 0;
+	border: none;
+}
+.ant-upload {
+	width: 100%;
+	height: 100%;
+}
+
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+	width: 60px;
+	font-size: 40px;
+	color: white;
+	z-index: 1;
+}
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next,
+.ant-carousel .slick-dots {
+	opacity: 0;
+	transition: opacity .33s ease-in-out;
+}
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+	position: absolute;
+}
+.ant-carousel .slick-prev {
+	left: 0;
+}
+.ant-carousel .slick-next {
+	right: 0;
+}
+.ant-carousel .slick-dots {
+	padding-bottom: 20px;
+}
+
+.ant-carousel:hover .slick-prev,
+.ant-carousel:hover .slick-next,
+.ant-carousel:hover .slick-dots {
+	opacity: 1;
+}
+
+.ant-carousel .slick-dots {
+	opacity: 0;
+}
+
+.ant-carousel .slick-dots li > button {
+	height: 10px;
+	border-radius: 20px;
+	box-shadow: 5px 10px 25px #00000075;
+}
+
+.ant-avatar {
+  box-shadow: 5px 10px 25px #00000015;
+}
+
+.ant-collapse-content > .ant-collapse-content-box {
+	padding: 0;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+	padding: 0;
+}
+.ant-modal {
+	top: 0;
+	padding: 0;
+	margin: 5vh auto;
+}
+.ant-modal-content {
+	border-radius: 20px;
+	overflow: hidden;
+	max-height: 100vh;
+	/*margin: auto;*/
+}
+.ant-modal-wrap {
+	overflow: hidden;
+}
+
+@media screen and (max-width: 575px) {
+	.ant-modal {
+		margin: auto;
+	}
+	.ant-modal-content {
+		height: 100vh;
+		height: calc(var(--vh, 1vh) * 100);
+		margin: 0;
+		border-radius: 0;
+	}
+}
+
+.ant-tooltip-inner {
+	border-radius: 20px;
+	padding: 10px 15px;
+}
+
+.anticon-question-circle {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.ant-spin-dot {
+	left: 0 !important;
+	right: 0 !important;
+	margin: auto !important;
+}
+
+.ant-image {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+.ant-image-preview-wrap {
+	pointer-events: all;
+}
+
+
+/* Global Styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+	height: 8px;
+	padding: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #00000015;
+  border-radius: 20px;
+}
+
+.ant-modal-confirm .ant-modal-confirm-btns .ant-btn+.ant-btn {
+	margin-left: 0;
+}
+
+.button-group-vertical,
+.button-group {
+	white-space: pre;
+	transition: opacity .1s ease-in-out;
+}
+
+.button-group-vertical .ant-btn,
+.button-group .ant-btn,
+.ant-modal-confirm-btns .ant-btn {
+	border-radius: 0;
+}
+.button-group-vertical .ant-btn:hover,
+.button-group .ant-btn:hover {
+	z-index: 1;
+}
+
+.button-group .ant-btn:first-child,
+.ant-modal-confirm-btns .ant-btn:first-child {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.button-group .ant-btn:last-child,
+.ant-modal-confirm-btns .ant-btn:last-child {
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.button-group-vertical .ant-btn:first-child {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+.button-group-vertical .ant-btn:last-child {
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.header {
+	margin: 20px 0 0 0px;
+}
+@media screen and (max-width: 575px) {
+	.header {
+		margin: 20px 20px 0 20px;
+	}
+}
+
+
+
+.hidden {
+	display: none;
+}
+
+textarea {
+	padding-bottom: 40px !important;
+	resize: none;
+}
+
+.gradient-overlay,
+.gradient-overlay-inverted {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	/*background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));*/
+	pointer-events: none;
+}
+.gradient-overlay-inverted {
+	background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(249,249,249,0) 20%, rgba(255,255,255,0) 100%);
+}
+
+.overlay-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.plx {
+	position: fixed;
+	top: min(40vh, 130px);
+	width: 100%;
+	max-width: 574px;
+}
+
+.text-highlight {
+	color: white; 
+	background-color: var(--ant-primary-color);
+	border-radius: 5px;
+}

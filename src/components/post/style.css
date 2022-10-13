@@ -1,0 +1,117 @@
+.guests-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.guests-avatar + .guests-avatar {
+	margin-top: 0;
+}
+.guests-name {
+	margin: 0 10px;
+}
+.guests-container,
+.post-image,
+.post-map-container {
+  width: auto;
+  height: 431px;
+  object-fit: cover;
+	transition: transform .1s ease-in-out, filter .05s ease-in-out, opacity .1s ease-in-out;
+}
+.guests-container-minimal,
+.post-image-minimal,
+.post-map-container-minimal {
+	height: 191px;
+}
+@media screen and (max-width: 575px) {
+	.guests-container,
+	.post-image,
+	.post-map-container {
+		height: 75vw;
+	}
+	.guests-container-minimal,
+	.post-image-minimal,
+	.post-map-container-minimal {
+		/* 2 posts per screen */
+		height: 33vw;
+		/* margin: 20px 20px 0 20px; */
+	}
+}
+
+.guest-gallery-container {
+	padding: 10px 0 20px 20px;
+}
+.guest-gallery-button {
+	margin-right: 20px;
+}
+
+.post-container {
+	display: block;
+	position: relative;
+}
+
+.more-outlined {
+	transition: transform .1s ease-in-out !important;
+	transform: rotate(90deg);
+}
+.comment {
+	cursor: pointer;
+	transition: transform .1s ease-in-out;
+}
+.comment:active {
+	transform: scale(.95);
+}
+
+.comment-date {
+	text-align: right;
+}
+
+.comment-form-container {
+	position: relative;
+	margin: 20px;
+}
+
+.comment-text {
+	padding: 20px;
+}
+
+.comment-button {
+	position: absolute !important;
+	bottom: -15px;
+	right: 20px;
+
+	transition: opacity .33s ease-in-out;
+}
+
+.post-cover-content {
+	position: absolute;
+	top: 0;
+	/* z-index: 1; */
+	padding: 20px;
+	text-shadow: 5px 10px 25px #00000075;
+	width: 100%;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+
+	opacity: 1;
+	transition: opacity .1s ease-in-out;
+
+}
+.post-cover-content-visible {
+	opacity: 1;
+}
+.post-container:hover .post-cover-content {
+	opacity: 1;
+}
+
+.post-actions, .post-actions-visible {
+	opacity: 1;
+	transition: opacity .1s ease-in-out;
+}
+.post-actions-visible {
+	opacity: 1;
+}
+.post-container:hover .post-actions {
+	opacity: 1;
+}

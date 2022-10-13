@@ -1,0 +1,26 @@
+#comments-container {
+	max-width: 574px;
+	margin: auto;
+}
+#comments-cover-card {
+	/* min-height: 431px; */
+	border-radius: 20px;
+	overflow: hidden;
+	pointer-events: all;
+	height: min(calc(100vw * 0.75), calc(576px * 0.75));
+
+	background-image: url("https://p.kindpng.com/picc/s/188-1880987_enter-image-description-here-monochrome-hd-png-download.png");
+	background-size: cover;
+}
+
+#comments-content-card {
+	padding: 20px 0 20px 0;
+}
+
+#comments-content-container {
+	
+}
+
+#comments-form-container {
+	margin: 20px;
+}

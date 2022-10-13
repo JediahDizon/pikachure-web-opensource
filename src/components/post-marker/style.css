@@ -1,0 +1,8 @@
+.post-marker {
+	transform: translateY(-10px);
+	border-bottom-left-radius: 0;
+}
+.post-marker:hover {
+	z-index: 10 !important;
+	transform: translateY(-10px);
+}
